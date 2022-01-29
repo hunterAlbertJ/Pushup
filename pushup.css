@@ -1,104 +1,120 @@
-
-
-/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
-  License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
 body {
-  line-height: 1;
-}
-ol, ul {
-  list-style: none;
-}
-blockquote, q {
-  quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+  background: linear-gradient(237deg, #033cee, #03e2ee);
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
 }
 
-
-
-
-/*         */
-body {
-    background-size: cover;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: normal;
-    text-align: center;
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 84%;
+  }
+  50% {
+    background-position: 100% 17%;
+  }
+  100% {
+    background-position: 0% 84%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 84%;
+  }
+  50% {
+    background-position: 100% 17%;
+  }
+  100% {
+    background-position: 0% 84%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 84%;
+  }
+  50% {
+    background-position: 100% 17%;
+  }
+  100% {
+    background-position: 0% 84%;
+  }
 }
 
 h2 {
-    font-size: 100px;
-    margin-top: 100px;
-    margin-bottom: 25px;
+  font-size: 100px;
+  margin-top: 100px;
+  margin-bottom: 25px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
 }
 h3 {
-    font-size: 75px;
-    margin-bottom: 20px;
-    margin-top: 20px;
+  font-size: 75px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
 }
 
 button {
-    border: outset;
-    padding-top: 55px;
-    padding-bottom: 55px;
-    color: white;
-    font-weight: bold;
-    width: 200px;
+  border: outset;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  color: white;
+  font-weight: bold;
+  width: 200px;
 }
-
 
 #increment-btn {
-    background: red;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border-radius: 150px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
 }
-#increment-btn:hover{
-box-shadow: 3px 3px 3px black;
+#increment-btn:hover {
+  box-shadow: 3px 3px 3px black;
 }
 
 #start-btn {
-    background:green;
+  background: rgba(59, 210, 35, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(13px);
+  -webkit-backdrop-filter: blur(13px);
+  border-radius: 150px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #reset-btn {
-    background: gray;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border-radius: 150px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
 }
-#reset-btn:hover{
-    box-shadow: 3px 3px 3px black;
-    }
-#start-btn:hover{
-        box-shadow: 3px 3px 3px black;
+#reset-btn:hover {
+  box-shadow: 3px 3px 3px black;
 }
-        
-    
+#start-btn:hover {
+  box-shadow: 3px 3px 3px black;
+}
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#link{
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+}
